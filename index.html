@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nika_nails — маникюр в Краснодаре, запись онлайн</title>
+  <meta name="description" content="Маникюр в Краснодаре: аппаратный, гель-лак, дизайн ногтей. Запись в один тап — заявка прилетит мастеру в Telegram или WhatsApp.">
+  <!-- когда появится домен — заменить images/hero.jpg на полный адрес https://…/images/hero.jpg -->
+  <meta property="og:title" content="Маникюр, который нельзя не заметить">
+  <meta property="og:description" content="Аппаратный маникюр, гель-лак и дизайн в Краснодаре. Запись в один тап — заявка улетит мастеру в Telegram или WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2C22 12 26 16 26 21a10 10 0 1 1-20 0C6 16 10 12 16 2z' fill='%23E5196F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <svg class="brand-drop" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2C22 12 26 16 26 21a10 10 0 1 1-20 0C6 16 10 12 16 2z" fill="currentColor"/></svg>
+    <span class="brand-name" data-master-name>Мастер</span>
+  </a>
+  <nav class="topnav" aria-label="Разделы">
+    <a href="#works">Работы</a>
+    <a href="#prices">Цены</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <a class="btn btn-accent btn-sm" href="#booking">Записаться</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1 class="display">
+        <span class="line"><span>Маникюр,</span></span>
+        <span class="line"><span>который нельзя</span></span>
+        <span class="line"><span>не заметить</span></span>
+      </h1>
+      <p class="lede">
+        Аппаратный маникюр, гель-лак и дизайн — ровно, стерильно
+        и с характером. Приходите со своим оттенком, <span class="accent-word">или примерьте здесь.</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href="#booking">Записаться на приём</a>
+        <a class="btn btn-ghost" href="#works">Смотреть работы</a>
+      </div>
+      <div class="swatches" role="group" aria-label="Примерить оттенок">
+        <p class="swatch-hint">Примерьте оттенок — сайт подстроится за вами</p>
+        <div class="chips" id="swatch-chips"></div>
+      </div>
+      <p class="hero-meta" data-master-city>Краснодар</p>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <img class="hero-img" src="images/hero.jpg" alt="Рука с ярким маникюром в неоновый френч" width="1080" height="1620">
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track"></div>
+  </div>
+
+  <section id="works" class="section">
+    <h2 class="h2">Свежие работы</h2>
+    <p class="section-note">Все фото на месте — без фильтров и чужих рук.</p>
+    <div class="strip" id="works-strip">
+      <figure class="shot" style="--tilt:-1.6deg"><img loading="lazy" src="images/work-01.jpg" alt="Маникюр с пастельным градиентом-омбре"><figcaption>градиент</figcaption></figure>
+      <figure class="shot" style="--tilt:1.1deg"><img loading="lazy" src="images/work-02.jpg" alt="Розовый маникюр с объёмными цветами"><figcaption>объёмные цветы</figcaption></figure>
+      <figure class="shot" style="--tilt:-0.8deg"><img loading="lazy" src="images/work-03.jpg" alt="Маникюр с хромом, эффект жидкого металла"><figcaption>хром</figcaption></figure>
+      <figure class="shot" style="--tilt:1.4deg"><img loading="lazy" src="images/work-04.jpg" alt="Молочный маникюр с тонким графичным минимализмом"><figcaption>молочный</figcaption></figure>
+      <figure class="shot" style="--tilt:-1.2deg"><img loading="lazy" src="images/work-05.jpg" alt="Вишнёвый маникюр с леопардовым акцентом"><figcaption>леопард</figcaption></figure>
+      <figure class="shot" style="--tilt:0.9deg"><img loading="lazy" src="images/work-07.jpg" alt="Пудровый маникюр со звёздами и стразами"><figcaption>звёзды</figcaption></figure>
+      <figure class="shot" style="--tilt:-1deg"><img loading="lazy" src="images/work-08.jpg" alt="Коралловый маникюр на светлом фоне"><figcaption>коралл</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="prices" class="section section-tinted">
+    <h2 class="h2">Услуги и цены</h2>
+    <p class="section-note">Цены примерные — точные назову перед началом работы.</p>
+    <ul class="menu">
+      <li><span>Маникюр аппаратный, без покрытия</span><i class="dots"></i><b>1 200 ₽</b></li>
+      <li><span>Маникюр + гель-лак</span><i class="dots"></i><b>от 1 800 ₽</b></li>
+      <li><span>Укрепление ногтей</span><i class="dots"></i><b>от 400 ₽</b></li>
+      <li><span>Френч</span><i class="dots"></i><b>от 500 ₽</b></li>
+      <li><span>Втирка, зеркальный блеск</span><i class="dots"></i><b>от 400 ₽</b></li>
+      <li><span>Стразы, слайдеры, роспись</span><i class="dots"></i><b>от 300 ₽</b></li>
+      <li><span>Снятие покрытия</span><i class="dots"></i><b>200 ₽</b></li>
+      <li><span>Ремонт одного ногтя</span><i class="dots"></i><b>150 ₽</b></li>
+      <li><span>Педикюр + покрытие</span><i class="dots"></i><b>от 2 200 ₽</b></li>
+      <li><span>Комплимент после укола</span><i class="dots"></i><b>бесплатно</b></li>
+    </ul>
+  </section>
+
+  <section id="process-summary" class="process-band">
+    <img class="process-img" loading="lazy" src="images/process.jpg" alt="Рабочее место: инструменты, лаки и полирующие пилки" width="1280" height="720">
+    <div class="process-copy">
+      <h2 class="h3">Как проходит визит</h2>
+      <ol class="process-list">
+        <li>Инструменты вскрываются стерильными при вас — никакого пережитого.</li>
+        <li>Форма и длина — как вы любите, расскажите и покажу.</li>
+        <li>Покрытие гель-лаком: два-три недели без сколов.</li>
+        <li>Запись — в один тап, без переписок по полдня.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2 class="h2">Что говорят клиентки</h2>
+    <div class="chat" role="list">
+      <div class="bubble" role="listitem">
+        <span class="who">Марина</span>
+        <p>Третий раз делаю укрепление — три недели носила, ни одного откола. И инструменты вскрывают прямо при вас, это прям успокаивает.</p>
+        <span class="stamp">8 ноября, 19:26</span>
+      </div>
+      <div class="bubble" role="listitem">
+        <span class="who">Ксюша</span>
+        <p>Скинула фото из пинтереста — повторили почти один в один. Единственное — ждала минут десять, но мне предложили чай, так что не в счёт 😄</p>
+        <span class="stamp">4 ноября, 12:15</span>
+      </div>
+      <div class="bubble" role="listitem">
+        <span class="who">Аня</span>
+        <p>Записалась через сайт в час ночи, утром подтвердили время. Молочный с блёстками — на фото хорошо, вживую ещё лучше.</p>
+        <span class="stamp">30 октября, 21:47</span>
+      </div>
+      <div class="bubble" role="listitem">
+        <span class="who">Даша</span>
+        <p>Сломала ноготь за день до свидания — починили за пятнадцать минут так, что не отличить от своих. И цену не подняли.</p>
+        <span class="stamp">24 октября, 18:05</span>
+      </div>
+      <div class="bubble bubble-out me" role="listitem">
+        <span class="who" data-master-name>nika_nails</span>
+        <p>Даша, ждём на следующий визит — возьмём что-то пояркое 💅</p>
+        <span class="stamp">24 октября, 18:09</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2 class="h2">Частые вопросы</h2>
+    <div class="faq">
+      <details>
+        <summary>Как готовиться к маникюру?</summary>
+        <p>Ничего особенного: старое покрытие сниму сама. Крем на руки перед визитом лучше не наносить — лак держится хуже. Можно прийти с любым референсом из Pinterest.</p>
+      </details>
+      <details>
+        <summary>Сколько носится гель-лак?</summary>
+        <p>Обычно 2–3 недели — зависит от быта и рук. Если ноготь отрос, на коррекцию или новый слой можно прийти в любой день, запись через форму на сайте.</p>
+      </details>
+      <details>
+        <summary>Можно со своим дизайном?</summary>
+        <p>Да! Покажите фото — повторю или предложу, как сделать аккуратнее и прочнее. Сложные дизайны лучше обсудить заранее при записи.</p>
+      </details>
+      <details>
+        <summary>Что если сломался ноготь?</summary>
+        <p>Приходите на ремонт — 15 минут и 150 ₽, ноготь не отличить от своих. Если сломался накануне события, пишите в WhatsApp — найду окошко.</p>
+      </details>
+      <details>
+        <summary>Как перенести или отменить запись?</summary>
+        <p>Свободная отмена — за сутки до визита, потом можно переносить по ситуации. Пишите в тот мессенджер, куда отправляли заявку.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="booking" class="section section-booking">
+    <div class="booking-copy">
+      <h2 class="h2">Записаться</h2>
+      <p class="lede-sm">Заполните три поля — заявка улетит мастеру, и вы договоритесь о времени.</p>
+      <ol class="steps">
+        <li>Выбираете услугу, дату и время</li>
+        <li>Заявка падает в Telegram или WhatsApp</li>
+        <li>В течение пары часов приходит подтверждение</li>
+      </ol>
+    </div>
+    <form class="booking-form" id="booking-form" novalidate>
+      <div class="field">
+        <label for="f-name">Ваше имя</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как вас зовут">
+      </div>
+      <div class="field">
+        <label for="f-contact">Телефон или @ник в Telegram</label>
+        <input id="f-contact" name="contact" type="text" inputmode="tel" placeholder="+7 … или @name">
+        <span class="field-hint">Необязательно — мастер и так увидит вас в чате</span>
+      </div>
+      <div class="field">
+        <label for="f-service">Услуга</label>
+        <select id="f-service" name="service"></select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-date">Дата</label>
+          <input id="f-date" name="date" type="date">
+        </div>
+        <div class="field">
+          <label for="f-time">Время</label>
+          <select id="f-time" name="time"></select>
+        </div>
+      </div>
+      <fieldset class="field chooser">
+        <legend>Куда прислать заявку</legend>
+        <label class="pill"><input type="radio" name="channel" value="wa" checked><span>WhatsApp</span></label>
+        <label class="pill"><input type="radio" name="channel" value="tg"><span>Telegram</span></label>
+      </fieldset>
+      <button class="btn btn-accent btn-wide" type="submit">Отправить заявку</button>
+      <p class="form-status" id="form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-row">
+    <span class="brand-name" data-master-name>Мастер</span>
+    <span class="footer-city" data-master-city>Город</span>
+    <span class="footer-hours" data-master-hours>ежедневно 10:00–20:00</span>
+  </div>
+  <div class="footer-links">
+    <a data-link-wa href="#booking">WhatsApp</a>
+    <a data-link-tg href="#booking">Telegram</a>
+    <a data-link-insta href="#top">Instagram</a>
+  </div>
+  <p class="footer-fine">© <span id="year"></span> <span data-master-name>Мастер</span>. Оттенок сайта выберете сами.</p>
+</footer>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
